@@ -1,0 +1,28 @@
+{
+	"name": "virtual-market",
+	"description": "A place for Dota 2 item exchange based on match results",
+	"version": "0.0.0",
+	"dependencies": {
+		"express": "~4.0.0",
+		"node-restful": "*",
+		"mongoose": "*",
+		"jwt-simple": "*",
+		"body-parser": "*"
+	}
+	"devDependencies": {
+		"bower", "*"
+	}
+	"keywords": [
+		"virtual-market",
+		"exchange",
+		"market",
+		"api"
+	],
+	"author": {
+		"name": "Dana",
+		"email": "email@mail.com"
+	},
+	"engines": {
+		"node": ">=0.8"
+	}
+}
