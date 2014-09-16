@@ -9,7 +9,7 @@ GLOBAL.app = express();
 
 var port = 8080;
 
-app.use('/', express.static(path.resolve('../client')));
+app.use('/', express.static(path.resolve('./client')));
 
 /*app.get('*', function(req, res){
     res.sendfile('./client/index.html');

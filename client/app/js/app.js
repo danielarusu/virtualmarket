@@ -1,1 +1,0 @@
-var FOLDER_PATH = '/app/'
