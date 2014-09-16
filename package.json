@@ -7,11 +7,13 @@
 		"node-restful": "*",
 		"mongoose": "*",
 		"jwt-simple": "*",
-		"body-parser": "*"
-	}
+		"body-parser": "*",
+        "path": "*"
+	},
 	"devDependencies": {
-		"bower", "*"
-	}
+		"bower": "*",
+        "grunt-bower-install": "*"
+	},
 	"keywords": [
 		"virtual-market",
 		"exchange",
