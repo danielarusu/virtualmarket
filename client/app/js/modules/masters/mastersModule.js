@@ -1,0 +1,1 @@
+var MASTERS_APP_MODULE = angular.module('masters-app', ['templates', 'ui.bootstrap']);

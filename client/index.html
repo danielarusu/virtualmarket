@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="ng-app" ng-app="masters-app">
 <head>
     <meta charset="UTF-8" />
     <meta name="Dana" content="Virtual market" />
     <title>Virtual market for Dota 2 items</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-</head>
-<body>
-    <nav class="navbar">
 
-    </nav>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body ng-controller="MainController" id="mastersBodyId">
+    <div ng-include="navPath"></div>
     <div id="main-wrapper">
     Hello World!
     </div>
+    <script src="app/js/controllers/MainController.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-ui-date/src/date.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app/js/app.js"></script>
 </body>
 </html>
