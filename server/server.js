@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var fs = require('fs');
 
-var database = require('./config/database.js')
+var database = require('./config/config.js')
 
 
 GLOBAL.app = express();
