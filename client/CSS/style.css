@@ -9,6 +9,7 @@ body{
     width: 100%;
     margin: 0; padding: 0;
     background: #1c1c1c;
+    text-align: center;
 }
 .clear{clear: both!important;}
 
@@ -16,8 +17,10 @@ body{
 .left-text{text-align: left!important;}
 .right-text{text-align: right!important;}
 
+/*classes for text colors*/
 .black, .black-text{color: #000;}
 .grey, .grey-text{color: #767676}
+.white, .white-text{color: #ffffff;}
 
 
 nav.navbar{
@@ -63,9 +66,29 @@ nav.navbar{
 #main-wrapper{
     position: absolute;
     top: 80px;
+    width: 100%;
     min-height: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
-
+.container{
+    position: relative;
+    display: block;
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    border: red 1px solid;
+    text-align: center;
+}
+#login-form{
+    position: relative;
+    width: 500px;
+    border: red 1px solid;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0px;
+    /*text-align: center;*/
+}
 .footer{
     position: absolute;
     bottom: 0;
