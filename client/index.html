@@ -21,16 +21,23 @@
     <script src="lib/angular-cookies/angular-cookies.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 
+    <script src="app/js/modules/masters/mastersModule.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/js/modules/config/configModule.js"></script>
+    <script src="app/js/modules/templates/templatesModule.js"></script>
+    <script src="app/services/services-custom.js"></script>
+    <script src="app/services/templates-provider.js"></script>
+    <script src="app/js/config/app-config.js"></script>
     <script src="app/js/controllers/MainController.js"></script>
+    <script src="app/js/controllers/UserController.js"></script>
 </head>
 <body ng-controller="MainController" id="mastersBodyId">
-    <div ng-include="navPath"></div>
+    <div ng-include="templates.header"></div>
 
     <div id="main-wrapper">
-        <div ng-include="homePath"></div>
+        <div ng-include="templates.home"></div>
     </div>
 
-    <div ng-include="footerPath"></div>
+    <div ng-include="templates.footer"></div>
 </body>
 </html>

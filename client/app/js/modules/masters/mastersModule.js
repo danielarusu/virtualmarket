@@ -1,1 +1,1 @@
-var MASTERS_APP_MODULE = angular.module('masters-app', ['templates', 'ui.bootstrap', 'ngRoute']);
+var MASTERS_APP_MODULE = angular.module('masters-app', ['templates','config', 'ngRoute']);

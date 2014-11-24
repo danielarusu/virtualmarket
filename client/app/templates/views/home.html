@@ -1,15 +1,24 @@
-<div class="container">
+<div class="container login-container">
 
     <div id="login-form" class="row">
-        <p class="white-text">Please enter your username and password to log in:</p>
+
+        <p class="form-intro white-text">Please enter your username and password to log in:</p>
+
         <div class="col-sm-12 text-center">
             <form>
                 <div class="form-group">
-                    <input type="text" class="form-control input-lg text-center" ng-model="userInfo.username">
+                    <div class="row">
+                        <span class="col-sm-4 form-label white-text">Username:</span>
+                        <input type="text" placeholder="Enter your username" class="col-sm-8 form-control" ng-model="userInfo.username">
+                    </div>
                     <br />
-                    <input type="text" class="form-control input-lg text-center" ng-model="userInfo.password">
+                    <div class="row">
+                        <span class="col-sm-4 form-label white-text">Password:</span>
+                        <input type="text" placeholder="Enter your password" class="col-sm-8 form-control" ng-model="userInfo.password">
+                    </div>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" ng-click="loginUser()">Submit</button>
+
+                <button type="button" class="btn btn-default" ng-click="loginUser()">Submit</button>
             </form>
         </div>
     </div>

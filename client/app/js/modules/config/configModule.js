@@ -1,0 +1,1 @@
+var CONFIG_MODULE = angular.module('config',['templates', 'ngRoute']);

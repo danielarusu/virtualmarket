@@ -1,4 +1,4 @@
-var MASTERS_APP_MODULE = angular.module('masters-app', ['ngRoute']);
+//var MASTERS_APP_MODULE = angular.module('masters-app', ['ngRoute']);
 
 MASTERS_APP_MODULE.value('$', $);
 

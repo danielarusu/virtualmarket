@@ -24,17 +24,20 @@ body{
 
 
 nav.navbar{
-    height: 80px!important;
+    height: 87px!important;
     background: rgb(31, 35, 37);
     border:none;
+    border-top: #14dfb4 6px solid!important;
 }
 .container-fluid{
     max-width: 1230px;
     width: 100%;
-    border: red 1px solid;
+    /*border: red 1px solid;*/
 }
 
-.container-fluid .navbar-header{padding: 30px 15px!important; }
+.container-fluid .navbar-header{
+    padding: 30px 15px!important;
+}
 
 .container-fluid .navbar-header a:hover{
     text-decoration: none;
@@ -55,12 +58,12 @@ nav.navbar{
     color: #ffffff;
     /*border: #fff 2px solid;
     border-radius: 5px;*/
-    /*background: #00BAAC;*/
+    background: #01ba7a;
     padding: 30px 27px;
-    background: -webkit-linear-gradient(top,rgba(0,186,172,0),rgba(0,186,172,0.5)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(bottom,rgba(0,186,172,0),rgba(0,186,172,0.5)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(bottom,rgba(0,186,172,0),rgba(0,186,172,0.5)); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, rgba(0,186,172,0), rgba(0,186,172,0.5)); /*Standard*/
+    /*background: -webkit-linear-gradient(top,rgba(0,186,172,0),rgba(0,186,172,0.5)); *//*Safari 5.1-6*/
+    /*background: -o-linear-gradient(bottom,rgba(0,186,172,0),rgba(0,186,172,0.5)); *//*Opera 11.1-12*/
+    /*background: -moz-linear-gradient(bottom,rgba(0,186,172,0),rgba(0,186,172,0.5)); *//*Fx 3.6-15*/
+    /*background: linear-gradient(to bottom, rgba(0,186,172,0), rgba(0,186,172,0.5)); *//*Standard*/
 }
 
 #main-wrapper{
@@ -77,22 +80,41 @@ nav.navbar{
     max-width: 1230px;
     width: 100%;
     margin: 0 auto;
-    border: red 1px solid;
     text-align: center;
 }
+.container.login-container{
+    margin-top: 8%!important;
+}
+
 #login-form{
     position: relative;
-    width: 500px;
-    border: red 1px solid;
+    width: 780px;
     display: block;
     margin: 0 auto;
-    padding: 100px 0px;
+    padding: 100px 100px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: rgba(20, 223, 180, 0.1) 2px solid;
     /*text-align: center;*/
+}
+.form-intro{
+    margin-bottom: 40px;
+}
+.form-group{
+    margin-bottom: 30px!important;
+}
+.form-group .form-control{
+    display: inline-block!important;
+    width: 50%!important;
+}
+.form-group .form-label{
+    padding: 6px 0px;
 }
 .footer{
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: #1F2325;
+    /*background-color: #1F2325;*/
+    background: rgb(31, 35, 37);
 }

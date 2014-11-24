@@ -8,7 +8,9 @@ MASTERS_APP_MODULE.controller('UserController', [
 
                 UserAuthenticationService.loginUser(username, password).success(function(data){
 
-                    UserVerificationService.isLogged = true
+                    UserVerificationService.isLogged = true;
+                    $window.sessionStorage.token = data.token;
+                    $location.path('/index');
 
                 }).error(function(status, data){
                     console.log(status);

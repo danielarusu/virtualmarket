@@ -10,5 +10,5 @@ exports.loginUser = function(req, res){
 
     dbPath.userModel.findOne({username: username}, function(err, user){
 
-    })
+    });
 }
