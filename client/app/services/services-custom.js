@@ -9,7 +9,7 @@ MASTERS_APP_MODULE
     .factory('UserAuthenticationService', function($http){
         return{
             loginUser: function(username, password){
-                return $http.post({username: username, password: password})
+                return $http.post(options.api.base_url + '/login', {username: username, password: password})
             },
             logoutUser: function(){}
         }

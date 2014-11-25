@@ -8,7 +8,8 @@
 		"mongoose": "*",
 		"jwt-simple": "*",
 		"body-parser": "*",
-        "path": "*"
+        "path": "*",
+        "passport": ">=0.0.0"
 	},
 	"devDependencies": {
 		"bower": "*",

@@ -36,14 +36,25 @@ nav.navbar{
 }
 
 .container-fluid .navbar-header{
+    font-family: Georgia, Verdana, Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #14dfb4;
+    display: inline-block;
+    float: left;
     padding: 30px 15px!important;
 }
 
 .container-fluid .navbar-header a:hover{
     text-decoration: none;
 }
-
+.navigation{
+    display: inline-block;
+    border: yellow 1px solid;
+}
 .container-fluid ul.nav{
+    display: inline-block;
+    border: red 1px solid;
 }
 .container-fluid ul.nav li{
     display: inline-block;
@@ -65,6 +76,17 @@ nav.navbar{
     /*background: -moz-linear-gradient(bottom,rgba(0,186,172,0),rgba(0,186,172,0.5)); *//*Fx 3.6-15*/
     /*background: linear-gradient(to bottom, rgba(0,186,172,0), rgba(0,186,172,0.5)); *//*Standard*/
 }
+.registration{
+    display: inline-block;
+    font-family: Georgia, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #ffffff;
+    padding: 30px 20px;
+    margin-left: 20px;
+    float: right;
+    border: red 1px solid;
+}
 
 #main-wrapper{
     position: absolute;
@@ -82,10 +104,21 @@ nav.navbar{
     margin: 0 auto;
     text-align: center;
 }
-.container.login-container{
+.container.login-container, .container.home-container{
     margin-top: 8%!important;
 }
 
+#home-wrapper{
+    position: relative;
+    width: 980px;
+    max-width: 1230px;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 100px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: rgba(20, 223, 180, 0.1) 2px solid;
+}
 #login-form{
     position: relative;
     width: 780px;
