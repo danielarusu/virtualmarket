@@ -2,6 +2,7 @@
 <html lang="en" id="ng-app" ng-app="masters-app">
 <head>
     <meta charset="UTF-8" />
+    <base href="/">
     <meta name="Dana" content="Virtual market" />
     <title>Virtual market for Dota 2 items</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -10,6 +11,7 @@
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/animations.css" rel="stylesheet" />
 
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="lib/jquery/dist/jquery.min.js"></script>
@@ -34,8 +36,9 @@
 <body ng-controller="MainController" id="mastersBodyId">
     <div ng-include="templates.header"></div>
 
-    <div id="main-wrapper">
-        <div ng-include="templates.home"></div>
+    <div id="main-wrapper" class="fullscreen background" style="background-image:url('img/background-image-1920x1080.jpg');" data-img-width="1920" data-img-height="1080">
+        <!--<div ng-include="templates.home"></div>-->
+        <ng-view></ng-view>
     </div>
 
     <div ng-include="templates.footer"></div>

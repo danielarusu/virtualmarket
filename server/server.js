@@ -15,7 +15,13 @@ GLOBAL.app = express();
 var port = 8080;
 
 app.use('/', express.static(path.resolve('../client')));
+app.use('/app', express.static(path.resolve('../client/app')));
+app.use('/js', express.static(path.resolve('../client/app/js')));
+app.use('/templates', express.static(path.resolve('../client/app/templates')));
 
+app.all('/*', function(req, res, next){
+    res.sendfile('index.html', {root: '../client'});
+})
 /*app.get('*', function(req, res){
     res.sendfile('./client/index.html');
 })*/
