@@ -15,6 +15,11 @@ CONFIG_MODULE
                     controller: 'UserController',
                     requireLogin: false
                 })
+                .when('/signup',{
+                    templateUrl: 'templates/views/login.html',
+                    controller: 'UserController',
+                    requireLogin: false
+                })
                 .otherwise({
                     redirectTo: '/',
                     templateUrl: 'templates/view/home.html',
