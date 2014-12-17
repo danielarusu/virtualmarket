@@ -22,4 +22,8 @@ CONFIG_MODULE
                 })
 
             $locationProvider.html5Mode(true);
-}]);
+    }])
+
+    .config(['$httpProvider', function($httpProvider){
+        $httpProvider.interceptors.push('TokenInterceptor');
+    }])

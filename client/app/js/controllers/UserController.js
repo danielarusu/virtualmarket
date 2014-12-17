@@ -10,13 +10,24 @@ MASTERS_APP_MODULE.controller('UserController', [
 
                     UserVerificationService.isLogged = true;
                     $window.sessionStorage.token = data.token;
-                    $location.path('/index');
+                    $location.path('/login');
 
-                }).error(function(status, data){
-                    console.log(status);
+                }).error(function(message, data){
+                    console.log(message);
                     console.log(data);
                 });
 
+            }
+        }
+
+        $scope.logoutUser = function(){
+
+            if(UserVerificationService.isLogged){
+
+                UserVerificationService.isLogged = false;
+
+                delete $window.sessionStorage.token;
+                $location.path('/');
             }
         }
     }
